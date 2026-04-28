@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven 3'
+        jdk 'jdk25'
+    }
+
     stages {
 
         stage('SCM') {

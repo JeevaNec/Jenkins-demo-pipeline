@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('SCM') {
+            steps {
+                git branch: 'webhookdemo',
+                    url: 'https://github.com/Venkienc/Jenkins-demo-pipelines.git'
+            }
+        }
+
+        stage('Build and Unit Test') {
+            steps {
+                bat 'mvn clean package'
+            }
+        }
+
+        stage('Done') {
+            steps {
+                echo 'Pipeline steps completed!'
+            }
+        }
+    }
+}

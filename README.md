@@ -1,1 +1,1 @@
-# Jenkins-demo-pipeline with SCM
+# Jenkins-demo-pipeline with SCM tool

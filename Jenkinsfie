@@ -6,7 +6,7 @@ pipeline {
         stage('SCM') {
             steps {
                 git branch: 'webhookdemo',
-                    url: 'https://github.com/Venkienc/Jenkins-demo-pipelines.git'
+                    url: 'https://https://github.com/JeevaNec/Jenkins-demo-pipeline.git'
             }
         }
 
